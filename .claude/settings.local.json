@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/account)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/diagram)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/screening)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/questions)",
+      "Bash(curl -s http://localhost:3001/account)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/log)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/progress)",
+      "Bash(curl -s -o /dev/null -w \"/ → %{http_code}\\\\n\" http://localhost:3002/)",
+      "Bash(curl -s -o /dev/null -w \"/account → %{http_code}\\\\n\" http://localhost:3002/account)",
+      "Bash(curl -s -o /dev/null -w \"/diagram → %{http_code}\\\\n\" http://localhost:3002/diagram)",
+      "Bash(curl -s -o /dev/null -w \"/screening → %{http_code}\\\\n\" http://localhost:3002/screening)",
+      "Bash(curl -s -o /dev/null -w \"/questions → %{http_code}\\\\n\" http://localhost:3002/questions)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}
